@@ -1,1 +1,1 @@
-# Ajent - Provide job seekers with the clearest path to their next amazing opportunity.
+# AJENT - Provide job seekers with the clearest path to their next amazing opportunity.
