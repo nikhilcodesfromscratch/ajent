@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3831a00ca.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Contact | Ajent</title>
+</head>
+<body>
+    <div class="container-profile">
+        <div class="navigation">
+            <div class="for-logo">
+                <a><i class="fa fa-times" id="one" onclick="navigation()"></i></a>
+                <a href="index.html"><img src="assets/images/ajent-logo.png" alt="logo"></a>
+                <a><i class="fa fa-bars" id="two" onclick="navigation()"></i></a>
+            </div>
+            <div class="navigation-bar" id="navigation-bar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About </a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="register.html" id="register">Register</a></li>
+                        <li><a href="login.html" id="login">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="register-main" data-aos="zoom-in" data-aos-duration="1300">
+            <div class="register-main-left">
+                <form>
+                    <h1>Contact Us</h1>
+                    <span><input type="text" name="name" placeholder="Full name" required></span>
+                    <span><input type="email" name="name" placeholder="Your email" required></span>
+                    <span style="border-bottom: 0;"><textarea name="message" id="message" cols="30" rows="5" placeholder="Enter Message..." required></textarea></span>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="register-main-right">
+                <img src="assets/images/contact-us.png" alt="">
+            </div>
+        </div>
+        <div class="ajent-footer">
+            <div class="ajent-footer-top">
+                <div class="footer-box footer-about">
+                    <div class="footer-head">
+                        <h3>About</h3>
+                    </div>
+                    <div class="footer-content readmore">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Voluptate et adipisci enim<br>aliquam delectus.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="footer-box footer-quick-menu">
+                    <div class="footer-head">
+                        <h3>Quick Menu</h3>
+                    </div>
+                    <div class="footer-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="jobs.html">Jobs</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-box footer-support">
+                    <div class="footer-head">
+                        <h3>Support</h3>
+                    </div>
+                    <div class="footer-content">
+                        <a href="contact.html">Support</a>
+                        <a href="about.html">Privacy</a>
+                        <a href="about.html">Terms and Conditions</a>
+                    </div>
+                </div>
+                <div class="footer-box footer-social">
+                    <div class="footer-head">
+                        <h3>Contact us</h3>
+                    </div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ajent-footer-bottom">
+                <h4>For queries mail us<br><a href="mailto:example@gmail.com">example@gmail.com</a></h4>
+                <p>Copyright © 2022 All rights reserved | ajent</p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

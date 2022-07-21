@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e3831a00ca.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Jobs | Ajent</title>
+</head>
+<body>
+    <div class="container-home">
+        <div class="navigation">
+            <div class="for-logo">
+                <a><i class="fa fa-times" id="one" onclick="navigation()"></i></a>
+                <a href="index.html"><img src="assets/images/ajent-logo.png" alt="logo"></a>
+                <a><i class="fa fa-bars" id="two" onclick="navigation()"></i></a>
+            </div>
+            <div class="navigation-bar" id="navigation-bar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About </a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="register.html" id="register">Register</a></li>
+                        <li><a href="login.html" id="login">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="jobs-main-page">
+            <div class="jobs-main-page-quote">
+                <h1 data-aos="zoom-in" data-aos-duration="1400">It's time to start living the life you've imagined.</h1>
+            </div>
+            <div class="job-posting">
+                <div class="job-posting-left">
+                    <div class="filter-jobs">
+                        <span><i class="fa fa-list-ul"></i><h3>Filter Jobs</h3></span>
+                    </div>
+                    <div class="filter-jobs-form">
+                        <form>
+                            <div class="form-job-sector">
+                                <h3>Job Type</h3>
+                                <select name="jobsector" id="jobsector" required>
+                                    <option value="All">All</option>
+                                    <option value="Professional">Professional</option>
+                                    <option value="Un Professional">Un Professional</option>
+                                    <option value="Freelancer">Freelancer</option>
+                                </select>
+                            </div>
+                            <div class="form-job-sector">
+                                <h3>Job Category</h3>
+                                <select name="jobcategory" id="jobsector" required>
+                                    <option value="All">All</option>
+                                    <option value="Accounting & Finance">Accounting & Finance</option>
+                                    <option value="Production & Operation">Production & Operation</option>
+                                    <option value="Telecommunication">Telecommunication</option>
+                                    <option value="Marketing & Sales">Marketing & Sales</option>
+                                    <option value="Design & Creative">Design & Creative</option>
+                                    <option value="Customer Support">Customer Support</option>
+                                    <option value="Freelancer">Freelancer</option>
+                                    <option value="Writing">Writing</option>
+                                </select>
+                            </div>
+                            <div class="form-job-sector">
+                                <h3>Sort by</h3>
+                                <select name="sortby" id="jobsector">
+                                    <option value="None">None</option>
+                                    <option value="High price">High price</option>
+                                    <option value="Trending">Trending</option>
+                                </select>
+                            </div>
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="job-posting-right">
+                    <div class="top-results">
+                        <h3>Top Results</h3>
+                        <button onclick="window.location.reload()"><i class="fa fa-refresh"></i> View New Jobs</button>
+                    </div>
+                    <div class="job-listing">
+                        <div class="job-listing-left">
+                            <h5>Project title</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis illo corrupti facilis quaerat, perferendis mollitia recusandae omnis libero ratione labore tenetur eum adipisci suscipit, possimus sequi, at sint. Neque, ipsum?</p>
+                            <h6>Additional Requirements</h6>
+                            <div class="more-details">
+                                <a href="#"><i class="fa fa-phone"></i> 9999999999</a>
+                                <span><i class="fa fa-location-arrow"></i> location</span>
+                                <span><i class="fa fa-user"></i> Job Category</span>
+                            </div>
+                        </div>
+                        <div class="job-listing-right">
+                            <span><h4>₹</h4>2000</span>
+                            <h5>Posted at</h5>
+                            <p>09:23 25-03-2022</p>
+                            <form>
+                                <input type="submit" value="Apply" id="applied">
+                                <input type="submit" value="Delete" id="delete">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="postjob" onclick="displayPost()"><i class="fa fa-plus"></i> Post a job</button>
+        <div class="post-job" id="post-job">
+            <form>
+                <h3>Post Job</h3>
+                <input type="text" name="title" placeholder="Job title" required>
+                <textarea name="description" id="description" cols="30" rows="5" placeholder="Job description" required></textarea>
+                <input type="text" name="location" placeholder="Job Location (Enter Full Address)" required>
+                <input type="number" name="phn" placeholder="Your Contact number">
+                <select name="jobsector" id="jobsector" required>
+                    <option value="Job Type">Job Type</option>
+                    <option value="All">All</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Un Professional">Un Professional</option>
+                    <option value="Freelancer">Freelancer</option>
+                </select>
+                <select name="jobcategory" id="jobsector" required>
+                    <option value="Job Category">Job Category</option>
+                    <option value="All">All</option>
+                    <option value="Accounting & Finance">Accounting & Finance</option>
+                    <option value="Production & Operation">Production & Operation</option>
+                    <option value="Telecommunication">Telecommunication</option>
+                    <option value="Marketing & Sales">Marketing & Sales</option>
+                    <option value="Design & Creative">Design & Creative</option>
+                    <option value="Customer Support">Customer Support</option>
+                    <option value="Freelancer">Freelancer</option>
+                    <option value="Writing">Writing</option>
+                </select>
+                <input type="number" name="price" placeholder="Enter price" required>
+                <input type="text" name="add" placeholder="Additional requirements (Optional)">
+                <div class="send-close">
+                    <button id="close" onclick="closePost()">Close</button>
+                    <input type="submit" id="send" value="Send">
+                </div>
+            </form>
+        </div>
+        <div class="ajent-footer">
+            <div class="ajent-footer-top">
+                <div class="footer-box footer-about">
+                    <div class="footer-head">
+                        <h3>About</h3>
+                    </div>
+                    <div class="footer-content readmore">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Voluptate et adipisci enim<br>aliquam delectus.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="footer-box footer-quick-menu">
+                    <div class="footer-head">
+                        <h3>Quick Menu</h3>
+                    </div>
+                    <div class="footer-content">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="jobs.html">Jobs</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-box footer-support">
+                    <div class="footer-head">
+                        <h3>Support</h3>
+                    </div>
+                    <div class="footer-content">
+                        <a href="contact.html">Support</a>
+                        <a href="about.html">Privacy</a>
+                        <a href="about.html">Terms and Conditions</a>
+                    </div>
+                </div>
+                <div class="footer-box footer-social">
+                    <div class="footer-head">
+                        <h3>Contact us</h3>
+                    </div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ajent-footer-bottom">
+                <h4>For queries mail us<br><a href="mailto:example@gmail.com">example@gmail.com</a></h4>
+                <p>Copyright © 2022 All rights reserved | ajent</p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
